@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ===============================
+     Background
+  =============================== */
+  --background: #0b1120;
+  --surface: #111827;
+  --surface-light: #1f2937;
+
+  /* ===============================
+     Typography
+  =============================== */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  /* ===============================
+     Brand
+  =============================== */
+  --brand: #6366f1;
+
+  /* ===============================
+     Product Roles
+  =============================== */
+  --data: #3b82f6;
+  --intelligence: #8b5cf6;
+  --automation: #06b6d4;
+
+  /* ===============================
+     Status
+  =============================== */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+
+  /* ===============================
+     Border & Radius
+  =============================== */
+  --border: rgba(255, 255, 255, 0.08);
+  --radius: 20px;
+
+  /* ===============================
+     Layout
+  =============================== */
+  --container-width: 1280px;
+  --section-padding: 120px;
+
+  /* ===============================
+     Motion
+  =============================== */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 600ms;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===============================
+   Global Elements
+=============================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

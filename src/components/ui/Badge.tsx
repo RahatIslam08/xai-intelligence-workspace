@@ -29,7 +29,7 @@ export default function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full px-3 py-1 text-xs font-medium backdrop-blur-sm transition-colors",
+        "inline-flex items-center rounded-full px-3 py-1 text-xs font-medium backdrop-blur-sm transition-all duration-300",
         variants[variant],
         className
       )}

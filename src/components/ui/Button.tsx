@@ -14,10 +14,10 @@ export default function Button({
 }: ButtonProps) {
   const variants = {
     primary:
-      "bg-[var(--brand)] text-white shadow-lg shadow-indigo-500/20 hover:opacity-90",
+      "bg-gradient-to-r from-indigo-500 to-violet-500 text-white shadow-xl shadow-indigo-500/30 hover:shadow-indigo-500/50",
 
     secondary:
-      "bg-[var(--surface)] border border-[var(--border)] text-white hover:bg-[var(--surface-light)]",
+      "bg-white/5 backdrop-blur border border-white/10 text-white hover:bg-white/10",
 
     ghost:
       "bg-transparent text-[var(--text-primary)] hover:bg-white/5",

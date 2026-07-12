@@ -1,6 +1,6 @@
 import Container from "@/components/ui/Container";
 import HeroContent from "./HeroContent";
-import HeroDashboard from "./HeroDashboard";
+import Dashboard from "@/components/dashboard";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
       <Container>
         <div className="relative z-10 grid w-full items-center gap-16 lg:grid-cols-2">
           <HeroContent />
-          <HeroDashboard />
+          <Dashboard />
         </div>
       </Container>
     </section>

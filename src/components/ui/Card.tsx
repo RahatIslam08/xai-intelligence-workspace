@@ -13,9 +13,9 @@ export default function Card({
   return (
     <div
       className={cn(
-        "rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)]/80 backdrop-blur-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl hover:shadow-black/20",
-        className
-      )}
+  "rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]",
+  className
+)}
       {...props}
     >
       {children}

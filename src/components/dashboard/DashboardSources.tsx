@@ -1,8 +1,8 @@
 const sources = [
+  "Stripe",
+  "GitHub",
   "Database",
-  "API",
-  "Files",
-  "Apps",
+  "Analytics",
 ];
 
 export default function DashboardSources() {
@@ -10,10 +10,10 @@ export default function DashboardSources() {
     <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
 
       <h4 className="font-semibold">
-        Sources
+        Connected Sources
       </h4>
 
-      <div className="mt-5 space-y-3">
+      <div className="mt-5 space-y-4">
 
         {sources.map((source) => (
           <div
@@ -22,9 +22,7 @@ export default function DashboardSources() {
           >
             <span>{source}</span>
 
-            <span className="text-emerald-400">
-              Active
-            </span>
+            <div className="h-2 w-2 rounded-full bg-emerald-400" />
           </div>
         ))}
 

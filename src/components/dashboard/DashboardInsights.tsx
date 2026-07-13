@@ -6,15 +6,15 @@ export default function DashboardInsights() {
         AI Summary
       </h4>
 
-      <p className="mt-4 text-sm text-[var(--text-secondary)] leading-7">
-        Revenue is up 23% this month.
+      <p className="mt-4 text-sm leading-7 text-[var(--text-secondary)]">
+        Your revenue trend is improving.
 
-        Enterprise customers continue to grow steadily with
-        improved engagement and lower churn.
+        AI predicts another 18% growth over the next
+        quarter with strong customer retention.
       </p>
 
       <button className="mt-6 text-sm font-medium text-[var(--brand)] hover:underline">
-        View Full Summary →
+        View Report →
       </button>
 
     </div>

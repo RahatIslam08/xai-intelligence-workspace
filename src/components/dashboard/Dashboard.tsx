@@ -1,25 +1,22 @@
 import Card from "@/components/ui/Card";
-import DashboardHeader from "./DashboardHeader";
-import DashboardStats from "./DashboardStats";
-import DashboardChart from "./DashboardChart";
-import DashboardInsights from "./DashboardInsights";
-import DashboardSources from "./DashboardSources";
+import Sidebar from "./sidebar";
+import Header from "./header";
+
 
 export default function Dashboard() {
   return (
-    <Card className="relative min-h-[620px] overflow-hidden rounded-3xl p-6">
+    <Card className="relative overflow-hidden rounded-3xl p-0">
+      <div className="flex h-[620px]">
+        <Sidebar />
 
-      <DashboardHeader />
+        <div className="flex-1 p-6">
 
-      <DashboardStats />
+  <Header />
 
-      <DashboardChart />
+  {/* Stats will go here */}
 
-      <div className="mt-6 grid grid-cols-2 gap-4">
-        <DashboardInsights />
-        <DashboardSources />
+</div>
       </div>
-
     </Card>
   );
 }

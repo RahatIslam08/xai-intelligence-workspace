@@ -1,42 +1,22 @@
 "use client";
 
 import Glow from "./Glow";
-import Connection from "./Connection";
-import Particle from "./Particle";
 
 export default function NeuralNetwork() {
   return (
-    <div className="relative h-[620px] w-[260px]">
-
+    <div
+      className="
+      absolute
+      left-[38%]
+      top-1/2
+      -translate-y-1/2
+      w-[520px]
+      h-[520px]
+      pointer-events-none
+      z-0
+      "
+    >
       <Glow />
-
-      <Connection />
-
-      <Particle
-        x={15}
-        y={300}
-      />
-
-      <Particle
-        x={165}
-        y={170}
-      />
-
-      <Particle
-        x={250}
-        y={30}
-      />
-
-      <Particle
-        x={170}
-        y={420}
-      />
-
-      <Particle
-        x={250}
-        y={590}
-      />
-
     </div>
   );
 }

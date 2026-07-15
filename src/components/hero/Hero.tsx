@@ -11,16 +11,18 @@ export default function Hero() {
       <div className="absolute left-1/2 top-40 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-[var(--brand)]/10 blur-[180px]" />
 
       <Container>
-        <div className="relative z-10 grid w-full items-center gap-10 lg:grid-cols-[1fr_260px_560px]">
 
-          <HeroContent />
+  <NeuralNetwork />
 
-          <NeuralNetwork />
+  <div className="relative z-10 grid items-center gap-10 lg:grid-cols-[1fr_620px]">
 
-          <Dashboard />
+      <HeroContent />
 
-        </div>
-      </Container>
+      <Dashboard />
+
+  </div>
+
+</Container>
 
     </section>
   );

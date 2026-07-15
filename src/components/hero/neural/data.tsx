@@ -1,0 +1,17 @@
+export const particles = [
+  { id: 1, x: 5, y: 12, size: 5 },
+  { id: 2, x: 12, y: 22, size: 6 },
+  { id: 3, x: 20, y: 10, size: 8 },
+  { id: 4, x: 28, y: 30, size: 7 },
+  { id: 5, x: 35, y: 18, size: 6 },
+  { id: 6, x: 40, y: 40, size: 8 },
+  { id: 7, x: 48, y: 26, size: 7 },
+  { id: 8, x: 56, y: 14, size: 6 },
+  { id: 9, x: 60, y: 38, size: 5 },
+  { id: 10, x: 68, y: 22, size: 8 },
+  { id: 11, x: 75, y: 34, size: 6 },
+  { id: 12, x: 82, y: 16, size: 7 },
+  { id: 13, x: 88, y: 42, size: 8 },
+  { id: 14, x: 92, y: 24, size: 6 },
+  { id: 15, x: 96, y: 34, size: 7 },
+];

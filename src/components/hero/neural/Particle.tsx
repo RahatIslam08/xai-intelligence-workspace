@@ -2,41 +2,37 @@
 
 import { motion } from "framer-motion";
 
-interface ParticleProps {
+type Props = {
   x: number;
   y: number;
-  size?: number;
-  delay?: number;
-}
+  size: number;
+};
 
 export default function Particle({
   x,
   y,
-  size = 6,
-  delay = 0,
-}: ParticleProps) {
+  size,
+}: Props) {
   return (
     <motion.div
-      className="absolute rounded-full bg-cyan-400"
+      className="absolute rounded-full bg-cyan-300"
       style={{
         left: `${x}%`,
         top: `${y}%`,
         width: size,
         height: size,
-        boxShadow: `
-          0 0 8px #22d3ee,
-          0 0 18px #22d3ee,
-          0 0 40px #3b82f6
-        `,
+        transform: "translate(-50%, -50%)",
+        boxShadow:
+          "0 0 8px #22d3ee, 0 0 18px #22d3ee",
       }}
       animate={{
-        scale: [1, 1.6, 1],
-        opacity: [0.5, 1, 0.5],
+        scale: [1, 1.25, 1],
+        opacity: [0.55, 1, 0.55],
       }}
       transition={{
+        duration: 2.5,
         repeat: Infinity,
-        duration: 2.8,
-        delay,
+        ease: "easeInOut",
       }}
     />
   );
